@@ -8,10 +8,7 @@
 	"version": "v1.2.0",
 	"id": "coopeeo.hideplus",
 	"name": "Hide+",
-	"developers": [
-		"Cooper",
-		"Viper"
-	],
+	"developer": "Cooper",
 	"description": "The ultimate hiding mod! Replaces other mods with one customizable mod.",
 	"repository": "https://github.com/coopeeo/HideAnything/",
 	"settings": {

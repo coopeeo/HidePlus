@@ -1,4 +1,4 @@
-name: Build Geode Mod
+name: Build Geode Mod - NEW INDEX!!!!!!!!!!!!!!!!!!!!!!
 
 on:
   workflow_dispatch:
@@ -32,7 +32,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Build the mod
-        uses: geode-sdk/build-geode-mod@main
+        uses: coopeeo/build-geode-mod@main
         with:
           combine: true
           sdk: nightly
