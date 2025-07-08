@@ -76,18 +76,23 @@ class $modify(LevelSearchLayer) {
         remove("LevelSearchLayer-filterstitle",bottomMenuReplacement,this->getChildByID("filters-title"));
         remove("LevelSearchLayer-corners",bottomMenuReplacement,this->getChildByID("left-corner"));
         remove("LevelSearchLayer-corners",bottomMenuReplacement,this->getChildByID("right-corner"));
+        
         if(auto searchbtns = this->getChildByID("search-button-menu")) {
 			hidesearchbtns(bottomMenuReplacement,searchbtns);
 		};
+        
         if(auto menuQuickSearch = this->getChildByID("quick-search-menu")) {
 			hideQuickSearchMenu(bottomMenuReplacement,menuQuickSearch);
 		};
+        
         if(auto filter = this->getChildByID("other-filter-menu")) {
 			hideotherfiltersmenu(bottomMenuReplacement,filter);
 		};
-         if(auto menufilters = this->getChildByID("difficulty-filter-menu")) {
+        
+        if(auto menufilters = this->getChildByID("difficulty-filter-menu")) {
 			ThisStupidDiffcultymenu(bottomMenuReplacement,menufilters);
 		};
+        
         if(auto menutime = this->getChildByID("length-filter-menu")) {
 			lengthmenu(bottomMenuReplacement,menutime);
 		};

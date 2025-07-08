@@ -1,11 +1,12 @@
 {
-	"geode": "4.0.1",
+	"geode": "4.6.3",
 	"gd": {
 		"win": "2.2074",
 		"mac": "2.2074",
-		"android": "2.2074"
+		"android": "2.2074",
+		"ios": "2.2074"
 	},
-	"version": "v1.3.0",
+	"version": "v1.4.0",
 	"id": "coopeeo.hideplus",
 	"name": "Hide+",
 	"developer": "Cooper",
@@ -397,6 +398,15 @@
 		},
 		"LevelSearchLayer-starfilter": {
 			"name": "Star Filter",
+			"type": "bool",
+			"default": false
+		},
+		"LevelInfoLayer-section": {
+			"name": "Level Info",
+			"type": "title"
+		},
+		"LevelInfoLayer-iconkit": {
+			"name": "Icon Kit",
 			"type": "bool",
 			"default": false
 		}

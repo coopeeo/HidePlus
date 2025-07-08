@@ -1,4 +1,8 @@
 # Hide+
+## v1.4.0
+* iOS support finally!
+* Updated to Geode v4.6.3
+* Add icon kit in levelinfolayer
 ## v1.3.0
 * Removed Custom Settings (The Titles) (Built-In to Geode v3 Settings)
 * Updated to Geode v4

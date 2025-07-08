@@ -2,19 +2,19 @@
 #include <Geode/Geode.hpp>
 using namespace geode::prelude;
 
-static void remove(std::string ee, CCMenu* bottomMenuReplacement, CCNode* achievements) {
+static void remove(std::string setting, CCMenu* replacementMenu, CCNode* node) {
 	auto mod = Mod::get();
-	if(!mod->getSettingValue<bool>(ee)) return;
-    if(!achievements) return;
-    auto parent = achievements->getParent();
-	achievements->setVisible(false);
-	achievements->removeFromParent();
-	bottomMenuReplacement->addChild(achievements);
+	if(!mod->getSettingValue<bool>(setting)) return;
+    if(!node) return;
+    auto parent = node->getParent();
+	node->setVisible(false);
+	node->removeFromParent();
+	replacementMenu->addChild(node);
     if (auto parentAsLayer = static_cast<CCMenu*>(parent)) parent->updateLayout();
 }
-static void hide(std::string ee, CCMenu* bottomMenuReplacement, CCNode* achievements) {
+static void hide(std::string setting, CCMenu* replacementMenu, CCNode* node) {
 	auto mod = Mod::get();
-	if(!mod->getSettingValue<bool>(ee)) return;
-    if(!achievements) return;
-	achievements->setVisible(false);
+	if(!mod->getSettingValue<bool>(setting)) return;
+    if(!node) return;
+	node->setVisible(false);
 }
